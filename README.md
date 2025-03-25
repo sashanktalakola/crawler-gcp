@@ -25,7 +25,8 @@ Ensure you have the following installed:
 ```plaintext
 ├── build/
 │   └── cloudbuild.yaml  # Google Cloud Build configuration
-├── main.py              # FastAPI app handling requests
+├── src/
+│   └── main.py          # FastAPI app handling requests
 ├── requirements.txt     # Python dependencies
 ├── Dockerfile           # Docker configuration
 ├── README.md            # Project documentation
@@ -36,8 +37,8 @@ Ensure you have the following installed:
 
 ### 1️⃣ Clone the repository  
 ```bash
-git clone https://github.com/your-repo/web-crawler-api.git
-cd web-crawler-api
+git clone https://github.com/sashanktalakola/crawler-gcp.git
+cd crawler-gcp
 ```
 
 ### 2️⃣ Install dependencies
@@ -52,7 +53,7 @@ crawl4ai-setup
 
 ### 4️⃣ Run the FastAPI server
 ```bash
-uvicorn main:app --host 0.0.0.0 --port 8080
+uvicorn src.main:app --host 0.0.0.0 --port 8080
 ```
 
 ---
