@@ -23,6 +23,8 @@ Ensure you have the following installed:
 
 ## 📂 Project Structure  
 ```plaintext
+├── build/
+│   └── cloudbuild.yaml  # Google Cloud Build configuration
 ├── main.py              # FastAPI app handling requests
 ├── requirements.txt     # Python dependencies
 ├── Dockerfile           # Docker configuration
